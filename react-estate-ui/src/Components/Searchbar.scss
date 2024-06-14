@@ -1,0 +1,75 @@
+@import "../Responsive.scss";
+
+.type {
+  button {
+    padding: 16px 30px;
+    border: 1px solid grey;
+    text-transform: capitalize;
+    border-bottom: none;
+
+    @include md{
+        border-bottom: 1px solid grey; margin-bottom: 10px;
+       
+        &:first-child {
+            border-bottom-left-radius: 5px; 
+            border-right: none;
+          }
+          &:last-child {
+            border-bottom-right-radius: 5px;
+          }
+     }
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-right: none;
+    }
+    &:last-child {
+      border-top-right-radius: 5px;
+    }
+  }
+}
+.active {
+  background-color: black;
+  color: white;
+}
+
+.mainborder {
+  border: 1px solid gray;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 10px;
+  width: 100%;
+  justify-content: space-between;
+
+  @include md{
+   flex-direction: column; width: 100%;  padding-left: 0;
+}
+
+  input {
+    border: none;
+    font-size: 18px;
+    outline: none;
+
+    
+  @include md{
+   width: 100%; padding: 10px;
+ }
+
+ 
+  }
+}
+.buttbar {
+  background-color: rgb(247, 247, 5);
+  padding: 8px 10px;
+  border: none;
+  @include md{
+    width: 100%;
+  }
+}
+
+.buttbar img {
+  width: 30px;
+
+
+}

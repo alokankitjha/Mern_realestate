@@ -1,0 +1,30 @@
+@import "../../Responsive.scss";
+
+.layout {
+
+  height: 100vh;
+  max-width: 1366px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+
+  @include lg {
+    background-color: pink;
+    max-width: 1280px; // Change to the desired color for the small screen
+  }
+ 
+  @include md {
+    background-color: yellow;
+    max-width: 768px; // Change to the desired color for the small screen
+  }
+  @include sm {
+    background-color:white;
+    max-width: 640px;// Change to the desired color for the small screen
+  }
+
+  .content{height: calc(100vh - 100px);}
+  
+
+}

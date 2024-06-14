@@ -1,0 +1,99 @@
+@import "../../Responsive.scss";
+
+.chat { @include md{height: 100%;}
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 10px;
+  height: 85%;
+  .top::-webkit-scrollbar {
+    display: none;
+  }
+  .top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    overflow-y: scroll;   @include md{ height: max-content; overflow-y: unset;}
+    .message {
+      display: flex;
+      gap: 20px;
+      padding: 12px 24px;
+      background-color: white;
+      border-radius: 20px;
+      align-items: center;
+    }
+
+    img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50px;
+      object-fit: cover;
+    }
+  }
+  .bottom::-webkit-scrollbar {
+    display: none;
+  }
+  .bottom { 
+    flex: 1;
+    background-color:white; flex-direction: column; justify-content: space-between;
+    overflow-y: scroll;
+    .center::-webkit-scrollbar {
+        display: none;
+      }
+    .upper{padding: 20px; background-color: orange; display: flex ; align-items: center; justify-content: space-between;}
+    .center{ height: 350px;
+        overflow-y: scroll;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  
+        .chatmessage{
+          width: 50%;
+  
+          &.own{
+            align-self: flex-end;
+            text-align: right;
+          }
+  
+          span{
+            font-size: 12px;
+            background-color: #f7c14b39;
+            padding: 2px;
+            border-radius: 5px;
+          }
+        }
+      }
+.down{  border-top: 2px solid #f7c14b85;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    textarea{
+      flex:3;
+      height: 100%;
+      border: none;
+      padding: 20px;
+    }
+
+    button{
+      flex:1;
+      background-color: #f7c14b85;
+      height: 100%;
+      border: none;
+      cursor: pointer;
+    }
+  }
+    .user { display: flex; align-items: center; gap: 10px; span{font-size: larger; cursor: pointer;}
+      img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        object-fit: cover;
+      }
+    }
+  }
+}

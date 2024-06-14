@@ -1,0 +1,24 @@
+@import "../../Responsive.scss";
+
+.list {
+  display: flex;
+  height: 100%;
+  gap: 20px;
+}
+.listleft {
+  flex: 3;
+  padding-right: 10px;
+ 
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+   overflow-y: scroll; margin-bottom: 100px; 
+}  .listleft::-webkit-scrollbar {
+    display: none;}
+.listright {
+  flex: 2;
+  background-color: #fcf5f3; 
+  height: 0%;
+
+  @include md{ display: none;}
+}

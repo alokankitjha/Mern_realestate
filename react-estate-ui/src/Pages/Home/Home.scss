@@ -1,0 +1,45 @@
+@import "../../Responsive.scss";
+
+.home {
+  height: 100%;
+  display: flex;  flex-wrap: wrap;
+}
+.title {font-size: 50px;  @include sm{font-size: 35px; display: flex ; flex-wrap: wrap;}}
+.para{font-size: large;}
+
+.textcontainer {
+  display: flex;
+  flex: 3;
+  .wrapper {
+    padding-right: 100px;
+    display: flex ; padding-top: 10% ;
+ gap: 30px; flex-direction: column; 
+
+ @include sm{ justify-content: flex-start;}
+@include md{padding: 0;} }
+}
+.imgcontainer {
+  display: flex;
+  flex: 2;
+  background-color: #fcf5fc;
+  position: relative;
+  @include md{
+    display: none;
+  }
+
+  img {
+    width: 115%;
+    position: absolute;
+    right: 0;
+    height: 90%;
+
+  
+  }
+}
+
+.boxes
+{display: flex; align-items: center; gap: 40px;
+
+@include sm{
+  display: none
+}}

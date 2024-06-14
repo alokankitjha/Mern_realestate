@@ -1,0 +1,45 @@
+@import "../../Responsive.scss";
+
+
+.gallery {
+  display: flex; justify-content: space-between; height: 300px; 
+  @include sm{ flex-direction: column; gap: 10px; margin-bottom: 20px;}
+.first-img {
+  width: 80%; /* Adjust size of the first image */
+  height: 300px;
+  cursor: pointer; padding-right: 20px;
+  border-radius: 5px; /* Optional: to give images rounded corners */
+  transition: transform 0.2s; /* Optional: for a smooth zoom effect */
+
+  @include sm{width: 100%;}
+}
+
+.first-img:hover {
+  transform: scale(1.05); /* Optional: zoom effect on hover */
+}
+
+.small-images {justify-content: space-between;
+
+  display: flex;
+  flex-direction: column;
+ height: 100%;
+ object-fit: contain;
+  @include sm{flex-direction: row;}
+
+}
+
+.gallery-img {
+  height: 30%; width: 150px;  @include sm{width: 30%; height: 100px; justify-content: flex-start;}
+ 
+  cursor: pointer;
+  border-radius: 5px; /* Optional: to give images rounded corners */
+  transition: transform 0.2s; /* Optional: for a smooth zoom effect */
+}
+
+.gallery-img:hover {
+  transform: scale(1.05); /* Optional: zoom effect on hover */
+}}
+
+
+
+@include md{     .alok{height: 800px ; width: 67%; display: flex ; align-items: center;}     }

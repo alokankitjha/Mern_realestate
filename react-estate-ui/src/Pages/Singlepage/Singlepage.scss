@@ -1,0 +1,264 @@
+@import "../../Responsive.scss";
+
+.singlepage {
+  display: flex;
+  height: 100%;
+
+  @include md {
+    flex-direction: column;
+    height: fit-content;
+    gap: 50px;
+    overflow-y: scroll;
+    height: calc(100vh - 100px);
+  }
+  @include sm {
+    font-size: 10px;
+  }
+
+  .details {
+    flex: 3;
+    overflow-y: scroll;
+    height: 83%;
+    @include md {
+      flex: none;
+      height: max-content;
+    }
+
+    .wrappersingle {
+      padding-right: 20px;
+      @include lg {
+        font-size: 15px;
+      }
+      @include md {
+        padding: 20px;
+      }
+    }
+  }
+
+  .wrappersingle2 {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.bottom {
+}
+
+.top {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  @include lg {
+    margin-top: 10px;
+  }
+  .address img {
+    width: 20px;
+  }
+
+  .address span {
+    color: gray;
+  }
+}
+
+.usering {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+ // background-color: rgb(138, 178, 251);
+  border-radius: 10px;
+
+  @include lg {
+    padding: 2px;
+  }
+  @include sm {
+    background-color: white;
+    padding: 0px;
+    font-size: 10px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @include lg {
+    gap: 10px;
+  }
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.userimg {
+  width: 100px;
+  object-fit: fill;
+  border-radius: 50%;
+  overflow: hidden;
+  .img {
+    width: 100%;
+  }
+}
+.features2 {
+  height: 85%;
+  overflow-y: scroll;
+  flex: 2;
+  background-color: #fcf5f3;
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    font-size: 10px;
+  }
+  @include md {
+    flex: none;
+    height: max-content;
+    padding: 20px;
+  }
+}
+.wrappersingle2 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.general {
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+.generalbox {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
+
+  .boxes1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      color: gray;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.roomsize {
+  h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+.roomsizebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  .a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    background-color: bisque;
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.generalbox2 {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 20px;
+
+  @include sm {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .boxes1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      color: gray;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.mapbox {
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+}
+
+.good {
+  display: flex;
+  justify-content: space-between;
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.buttonsbox {
+  img {
+    width: 20px; @include sm {width: 15px;}
+  }
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  @include sm{padding: 5px; gap: 2px;}
+  button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    gap: 10px;
+    @include sm{font-size: 10px; padding: 5px; gap: 2px;}
+  }
+}
+
+
+.newbox{ display: flex; gap: 20px;}
